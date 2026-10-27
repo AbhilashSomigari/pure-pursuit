@@ -24,7 +24,7 @@ setup(
     zip_safe=True,
     maintainer='Student',
     maintainer_email='student@example.com',
-    description='Lab 5: F1TENTH pure pursuit waypoint following.',
+    description='Lab 4: F1TENTH pure pursuit waypoint following.',
     license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={

@@ -3,7 +3,7 @@
 <package format="3">
   <name>pure_pursuit_pkg</name>
   <version>0.0.0</version>
-  <description>Lab 5: F1TENTH pure pursuit waypoint following.</description>
+  <description>Lab 4: F1TENTH pure pursuit waypoint following.</description>
 
   <maintainer email="student@example.com">Student</maintainer>
   <license>Apache-2.0</license>
