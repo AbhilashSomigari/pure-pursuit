@@ -1,4 +1,4 @@
-# Lab 5: Pure Pursuit
+# Lab 4: Pure Pursuit
 
 Waypoint following for the F1TENTH car with the pure pursuit algorithm,
 implemented as the ROS 2 Python package `pure_pursuit_pkg`.
