@@ -1,0 +1,22 @@
+pure_pursuit_node:
+  ros__parameters:
+    odom_topic: /ego_racecar/odom   # car: /pf/pose/odom (particle filter)
+    drive_topic: /drive
+    frame_id: map
+    # waypoints (empty = waypoints/data.csv installed with the package)
+    waypoints_path: ''
+    waypoint_spacing: 0.05     # resampling step (m)
+    smoothing_window: 9        # moving average over resampled waypoints
+    search_window: 100         # nearest-waypoint search ahead of last index
+    # lookahead L = lookahead_distance + lookahead_speed_gain * speed
+    lookahead_distance: 0.9
+    lookahead_speed_gain: 0.05
+    wheelbase: 0.3302
+    max_steering: 0.4189
+    # speed profile: v = sqrt(max_lateral_accel / |curvature|), clipped,
+    # then limited so the car can brake at max_decel before corners
+    max_speed: 5.0
+    min_speed: 1.5
+    max_lateral_accel: 5.0
+    max_decel: 5.0
+    speed_scale: 1.0           # multiply the whole profile (e.g. 0.4 on the car)
